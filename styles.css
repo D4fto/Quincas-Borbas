@@ -19,22 +19,16 @@ body {
 
 header {
     text-align: center;
-    padding: 60px 20px 40px;
-    border: 3px solid #8b6f47;
-    border-radius: 15px;
+    padding: 120px 140px 120px;
     margin: 40px auto;
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.3);
+    background: url(moldura.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
 }
 
-header::before,
-header::after {
-    content: '❦';
-    position: absolute;
-    font-size: 40px;
-    color: #8b6f47;
-}
 
 header::before {
     top: 10px;
@@ -225,6 +219,18 @@ ul.default{
     font-family: "Cedarville Cursive", cursive;
 }
 
+.imgMachado{
+    width: 400px;
+    min-width: 400px;
+}
+
+.machadoContainer{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+
+}
+
 .character-card .role {
     font-style: italic;
     color: #6b5540;
@@ -339,6 +345,17 @@ ul.default{
     margin-bottom: 10px;
 }
 
+.linhas{
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
 .team-card .role {
     font-style: italic;
     color: #6b5540;
@@ -360,10 +377,31 @@ footer::before {
     margin-bottom: 15px;
 }
 
+@media (max-width: 1480px) {
+    .linhas{
+        display: none;
+    }
+}
+@media (max-width: 1100px) {
+    .machadoContainer{
+        flex-direction: column;
+        align-items: center;
+        >div{
+            width: 100%;
+        }
+    }
+}
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
         letter-spacing: 4px;
+    }
+
+    header{
+        width: 372px;
+        background-image: url(moldura2.png);
+        font-size: .8em;
+        padding: 110px 110px 110px 105px;
     }
 
     nav ul {
