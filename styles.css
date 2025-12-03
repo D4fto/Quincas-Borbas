@@ -192,6 +192,15 @@ p {
     padding: 0 10px;
 }
 
+ul.default{
+    padding-left: 1.5em;
+    text-align: justify;
+    font-size: 1.1em;
+    strong{
+
+    }
+}
+
 .character-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
