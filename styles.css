@@ -212,6 +212,19 @@ ul.default{
     color: #4a3621;
 }
 
+.carta{
+    background-image: url("./fundoCarta.png");
+    background-size: cover;
+    padding: 4em;
+    padding-bottom: 1em;
+    
+}
+
+.cursive{
+    font-size: 1.5em;
+    font-family: "Cedarville Cursive", cursive;
+}
+
 .character-card .role {
     font-style: italic;
     color: #6b5540;
